@@ -21,6 +21,6 @@ Contains data citations and images used in the slideshow
 Contains source code for any manufactured functions used in the notebok
 
 ## Business Understanding
-Since the introduction of the Nintendo Entertainment System in 1985 there has been a proliferation of new and more advanced gaming systems and videogames introduced to the global market.  Though many companies likely have methods and tools that would predict the success of new videogames, new tools could help game publishers determine the success of a game based on previous sales in the global market.  This may reduce the risk of a game that does not give a good return on investment and allow the company to invest thier resources in projects that would have a higher likelihood of success. 
+Since the introduction of the Nintendo Entertainment System in 1985 there has been a proliferation of new and more advanced gaming systems and videogames introduced to the global market.  Though many companies likely have methods and tools that would predict the success of new videogames, new tools could help game publishers determine the success of a game based on previous sales.  This may reduce the risk of a game that does not give a good return on investment and allow the company to invest thier resources in projects that would have a higher likelihood of success. 
 
 ## Data Understanding
