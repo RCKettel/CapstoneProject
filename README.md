@@ -26,3 +26,5 @@ Since the introduction of the Nintendo Entertainment System in 1985 there has be
 ## Data Understanding
 The [Project Data](https://data.world/julienf/video-games-global-sales-in-volume-1983-2017) contains over 16,500 records of the sales of individual videogames in each major market from 1980 through 2020 including North America, Europe, and Japan ranked by the total global sales for that game.  The data for the games are common to each market and also contians the title, platform, genre, and publisher of each.
 
+![YearlyEarnings](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/GsalesScatter.png)
+
