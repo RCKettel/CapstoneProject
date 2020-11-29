@@ -40,7 +40,7 @@ The model, a ridge regrssion, is a poor predictor of future data. Over fitness i
 ## The final model
 The final model is a random forest regressor.Compared to the first model the homoskedasticity of this model is far more evident. Though the data shows a greater distribution about the mean as shown in the residuals graph and the reg plot. The continued inability of the model to predict on datapoints with smaller values rather than larger datapoints speaks to a low accuracy although the demonstrated by an MAE of .6 rather than the .5 of the first model.
 
-![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/FnlMdlResiPlt.png)
+![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/FnlMdlRsidPlt2.png)
 ![RegPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/FnlMdlRegPlt.png)
 
 ## Future Improvement
