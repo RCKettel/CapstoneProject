@@ -34,7 +34,7 @@ To collect data the from IGDB create a twitch account. If the instructions are f
 ## The First Model
 The model, a ridge regrssion, is a poor predictor of future data. Over fitness is demonstrated by the measured difference in the R2 score in the test set versus the training set of close to 50%. In addition, the data is not homoskedastic around the best fit line and the residual plot shows the same. Both of these show the difficulty the model will have in predicting on an dependent variable. As the lines in each show more easily where the data is better predicted at lower values than at higher values the reliability of the predictions is somewhat untrustworthy. When the data was chosen it was predicted that the lower number of features would affect the predictions of the data for this reason more data was collected.
 
-![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ModOneResidPlt.png)
+![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ModOneRsdPlt2.png)
 ![Regplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ModOneRegPlt.png)
 
 ## The final model
