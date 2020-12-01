@@ -34,17 +34,20 @@ To collect data from [IGDB](https://api-docs.igdb.com/#about) create a [twitch a
 ## The First Model
 This model, a linear regression, was run to identify how well a regression would fit to the features using a basic supervised model without any regularization. The results clearly show the model does not perform well with the features as they are. The low r2 score of .16 in tandem with a high MAE of .71 in the results of the training data show a low distrbution about the mean and low accuracy in the predictions of the model. In addition, the even lower r2 and much higher MAE in the validation scores show the model does not generalize well to new data proving underfitness and a possible need for regularization.
 
+![linregplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinRgRegPlt.png)
+![linregrsdplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinRgRsdPlt.png)
+
 ## The Second Model
 Ridge Regression was chosen to adjust the coefficients without lowereing them to zero in order to lower the variance thereby raising the scores from the validation data.  This did not prevent the model from being underfit. The training data in this model gave results that were nearly identical to those in the linear regression model the difference being a negligible increase in the r2 score.  The greatest difference for this model was in the scores from the test data.  The r2 score at .15 and the MAE at .76 are a dramatic change in comparison to the original scores returned by the linear regression model. However, the reg plot has shown the difficulty the model had in predicting on a dependent variable, by visualizing more easily where the data is better predicted at lower values than at higher values and how the reliability of the predictions were somewhat untrustworthy. Meanwhile, the residuals plot demonstrated the necessity to move away from a more basic linear regression where it had shown the heteroskedasticity of the data.  When the data was chosen, it was predicted the lower number of features would affect the predictions of the data.  For this reason, more data was collected.
 
-![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ModOneRsdPlt2.png)
-![Regplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ModOneRegPlt.png)
+![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ResidualsofSecondModel.png)
+![Regplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ActVsProjSlsscndMod.png)
 
 ## The final model
 Compared to the second model the homoskedasticity of this model is far more evident. This data shows a greater distribution about the mean as demonstrated in the residuals graph and the reg plot. Given all of this, the accuracy has increased in this model over the original as can be seen in how the larger predictions fall along the projected values in both graphs demonstrating a better ability to predict on the dependent variables.
 
-![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/FnlMdlRsidPlt2.png)
-![RegPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/FnlMdlRegPlt.png)
+![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/BstRsdls.png)
+![RegPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/BstPrjSls.png)
 
 ## Future Improvement
 Using feature engineering and hypertuning will help improve the current model.  More and different models should be considered and improved upon to find of other models such as a KNearest Neighbors regressor or using boosting could improve the MAE score or the accuracy.  If the models don't show as much improvement a desired a final step would be to find more data and engineer more features using that data. Then begin working with the models again to see if there is any improvement in the models that showed the most promise.
