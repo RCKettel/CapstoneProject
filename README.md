@@ -34,20 +34,20 @@ To collect data from [IGDB](https://api-docs.igdb.com/#about) create a [twitch a
 ## The First Model
 This model, a linear regression, was run to identify how well a regression would fit to the features using a basic supervised model without any regularization.  The results clearly show the model does not perform well with the features as they are.  The low r2 score of .18 in tandem with a high MAE of .73  in the results of the training data show a low distrbution about the mean and low accuracy in the predictions of the model.  In addition, the even lower r2 of -2 and much higher MAE twelve digits in length in the validation scores show the model does not generalize well to new data proving underfitness and a possible need for regularization.
 
-![linregplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinRgRegPlt.png)
-![linregrsdplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinRgRsdPlt.png)
+![linregplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinRgRegPlt2.png)
+![linregrsdplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinRgRsdPlt2.png)
 
 ## The Second Model
 Ridge Regression was chosen to adjust the coefficients without lowereing them to zero in order to raise the variance thereby raising the scores from the validation data. This did not prevent the model from being underfit. The training data in this model gave results that were slightly better compared to those in the linear regression model the difference being a .1 increase in the r2 score. The greatest difference for this model was in the scores from the test data. The r2 score at .19 and the MAE at .70 are a dramatic change in comparison to the original scores returned by the linear regression model. However, the reg plot has shown the difficulty the model had in predicting on a dependent variable, by visualizing more easily where the data is better predicted at lower values than at higher values demonstrating how the reliability of the predictions were somewhat untrustworthy. Meanwhile, the residuals plot identified the necessity to move away from a more basic linear regression where it had shown the heteroskedasticity of the data. The low r2 score is likely attributed to the low number of features. For this reason more data was collected.
 
-![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ResidualsofSecondModel.png)
-![Regplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ActVsProjSlsscndMod.png)
+![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/RsdlsRdg.png)
+![Regplt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ActVsProjSlsRdg.png)
 
 ## The final model
 Compared to the second model the homoskedasticity of this model is far more evident. This data shows a greater distribution about the mean as demonstrated in the residuals graph and the reg plot. Given all of this, the accuracy has increased in this model over the original as can be seen in how the larger predictions fall along the projected values in both graphs demonstrating a better ability to predict on the dependent variables.
 
-![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/BstRsdls.png)
-![RegPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/BstPrjSls.png)
+![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ResidRFR.png)
+![RegPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinRegRFR.png)
 
 ## Future Improvement
 Using feature engineering and hypertuning will help improve the current model.  More and different models should be considered and improved upon such as a KNearest Neighbors regressor or using boosting could improve the MAE score or the accuracy.  If the models don't show as much improvement a desired a final step would be to find more data by scraping it from a website or making another API request. Then engineer more features such as what franchise the game belongs to, if the game is multiplayer, or the games ESRB rating using that data. Then begin working with the models again to see if there is any improvement in the models that showed the most promise.
