@@ -47,7 +47,7 @@ Ridge Regression was chosen to adjust the coefficients without lowereing them to
 Compared to the second model the homoskedasticity of this model is far more evident. This data shows a greater distribution about the mean as demonstrated in the residuals graph and the reg plot. Given all of this, the accuracy has increased in this model over the original as can be seen in how the larger predictions fall along the projected values in both graphs demonstrating a better ability to predict on the dependent variables.
 
 ![ResidPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/ResidRFR.png)
-![RegPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinRegRFR.png)
+![RegPlt](https://github.com/RCKettel/CapstoneProject/blob/main/Resources/Images/LinregRFR2.png)
 
 ## Future Improvement
 Using feature engineering and hypertuning will help improve the current model.  More and different models should be considered and improved upon such as a KNearest Neighbors regressor or using boosting could improve the MAE score or the accuracy.  If the models don't show as much improvement a desired a final step would be to find more data by scraping it from a website or making another API request. Then engineer more features such as what franchise the game belongs to, if the game is multiplayer, or the games ESRB rating using that data. Then begin working with the models again to see if there is any improvement in the models that showed the most promise.
